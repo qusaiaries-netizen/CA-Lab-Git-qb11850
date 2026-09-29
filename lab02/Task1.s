@@ -1,0 +1,13 @@
+.text
+.globl main
+main:
+li x19, 0 #f
+li x20, 2 #g
+li x21, 1 #h
+li x22, 0 #i
+li x23, 0 #j
+bne x22, x23, else
+add x19, x20, x21
+beq x0, x0, exit
+else: sub x19,x20, x21
+exit:
